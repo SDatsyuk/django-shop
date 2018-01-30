@@ -3,6 +3,7 @@ from django.contrib.auth import authenticate, login
 from django.contrib.auth.decorators import login_required
 from products.models import ProductImage, Product
 #magazine views
+#sd commit
 def index(request):
 	product_images = ProductImage.objects.filter(is_active=True, is_main=True)
 	if request.user.is_authenticated:
